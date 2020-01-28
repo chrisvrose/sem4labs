@@ -29,7 +29,10 @@ public class Complex{
 	}
 	//public 
 	public static void main(String[] args){
-		Complex c1 = new Complex(4.0f,5.0f);
+		Scanner in = new Scanner(System.in);
+		float a = in.nextFloat();
+		float b = in.nextFloat();
+		Complex c1 = new Complex(a,b);
 		Complex c2 = new Complex();
 		Complex c3 = new Complex(7.0f,8.6f);
 		Complex c4 = c1.Add(c1,c3).Subtract(c3).Subtract(c1);
@@ -38,7 +41,7 @@ public class Complex{
 		System.out.println("|c1|^2="+c1.SqrMagnitude());
 		
 
-
+		in.close();
 		//Complex.SqrMagnitude(
 	}
 }

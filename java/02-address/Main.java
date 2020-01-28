@@ -7,8 +7,12 @@ public class Main{
 		Student[] s = new Student[n1];
 		System.out.println("Enter number of Colleges");
 		int n2 = in.nextInt();
+		College[] c = new College[n2];
 		System.out.println("Enter number of Employees");
 		int n3 = in.nextInt();
+		Employee[] n = new Employee[n2];
+
+		//For colleges
 
 
 

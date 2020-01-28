@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Complex",
+            "request": "launch",
+            "mainClass": "Complex",
+            "projectName": "sem4labs_fa54221d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - mergeSort",
             "request": "launch",
             "mainClass": "mergeSort",
@@ -24,7 +31,9 @@
             "request": "launch",
             "mainClass": "${file}",
             "classPaths": [
-                "./daa/01-sorts"
+                "./daa/01-sorts",
+                "java/01-class",
+                "java/02-address"
             ]
         }
     ]

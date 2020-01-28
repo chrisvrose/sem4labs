@@ -69,6 +69,7 @@ public class quicksort{
 			for(int j=0;j<3;j++){
 				sorts[j].Sort(0, i-1);
 				res[j] = sorts[j].getCount();
+				///Assert that this array is sorted for sure
 				if(!sorts[j].isSorted()){System.err.println("Not sorted");}
 			}
 			System.out.println(i+"\t"+res[0]+"\t"+res[1]+"\t"+res[2]);

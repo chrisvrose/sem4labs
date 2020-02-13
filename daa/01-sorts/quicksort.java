@@ -37,19 +37,23 @@ public class quicksort{
 		int i=low+1,j=high,pivot=arr[low],t;		//Set pivot to first element
 		while(true){
 			//System.out.println("("+i+","+j+")");
-			while(pivot>=arr[i]&&i<high){ i++;count++;};
-			while(pivot<arr[j]&&j>=low) {j--;count++;}
+			while(i<=high && pivot>=arr[i]){ i++;count++;};
+			while(pivot<arr[j]) {j--;count++;}
 			
 			if(i<j){
+				//System.out.println("LEft case");
 				t = arr[j];
 				arr[j]= arr[i];
 				arr[i] = t;
 			}else{
+				//System.out.println("Right:"+i+","+j+""+low);
 				t = arr[low];
 				arr[low] = arr[j];
 				arr[j] = t;
 				return j;
+			
 			}
+			//return j;
 		}
 	}
 

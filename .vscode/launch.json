@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HeapSort",
+            "request": "launch",
+            "mainClass": "HeapSort",
+            "projectName": "sem4labs_fa54221d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Complex",
             "request": "launch",
             "mainClass": "Complex",

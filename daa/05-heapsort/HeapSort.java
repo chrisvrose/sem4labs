@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class HeapSort{
 	private int[] a;
 	public	int count = 0;
-	int count2 = 0;
+	//int count2 = 0;
 	public HeapSort(int[] heap){this.a  = heap;makeHeap();heapSort();}
 
 
@@ -70,7 +70,7 @@ public class HeapSort{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter number of elements");
-		int n = in.nextInt(),i;
+		int n = in.nextInt(),i,j;
 		int[] heapArray = new int[n];
 		for(i=0;i<n;i++){
 			heapArray[i] = in.nextInt();
@@ -85,17 +85,17 @@ public class HeapSort{
 		int[] counts = new int[3];
 		System.out.println("n\tASC\tDESC\tRAND");
 		for(i=1;i<12;i++){
-			newArray[0] = new int[1<<i];
-			newArray[1] = new int[1<<i];
-			newArray[2] = new int[1<<i];
-			for(int j=0;j<(1<<i);j++){
+			for(j=0;j<3;j++){
+				newArray[j] = new int[1<<i];
+			}
+			for(j=0;j<(1<<i);j++){
 				newArray[0][j] = j;
 				newArray[1][j] = 1<<i - j;
 				newArray[2][j] = (int)(Math.random()*(1<<i));
 			}
-			counts[0] = new HeapSort(newArray[0]).count;
-			counts[1] = new HeapSort(newArray[1]).count;
-			counts[2] = new HeapSort(newArray[2]).count;
+			for(j=0;j<3;j++){
+				counts[j] = new HeapSort(newArray[j]).count;
+			}
 			n = newArray[0].length;
 			System.out.println(n+"\t"+counts[0]+"\t"+counts[1]+"\t"+counts[2]);
 		}

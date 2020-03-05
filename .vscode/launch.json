@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StringManip2",
+            "request": "launch",
+            "mainClass": "StringManip2",
+            "projectName": "sem4labs_fa54221d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringManip",
+            "request": "launch",
+            "mainClass": "StringManip",
+            "projectName": "sem4labs_fa54221d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HeapSort",
             "request": "launch",
             "mainClass": "HeapSort",

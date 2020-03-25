@@ -30,6 +30,7 @@ public class HeapSort{
 			if(2*i+1<=endpoint){
 				//has atleast 1 child
 				maxChildIndex = 2*i+1;
+				//count++;
 				if(2*i+2<=endpoint){
 					maxChildIndex = a[2*i+1]>a[2*i+2]?(2*i+1):(2*i+2);
 				}
@@ -84,7 +85,7 @@ public class HeapSort{
 		int[][] newArray = new int[3][];
 		int[] counts = new int[3];
 		System.out.println("n\tASC\tDESC\tRAND");
-		for(i=1;i<12;i++){
+		for(i=1;i<16;i++){
 			for(j=0;j<3;j++){
 				newArray[j] = new int[1<<i];
 			}

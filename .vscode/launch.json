@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Circle",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "sem4labs_c3b3f320"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StringManip2",
             "request": "launch",
             "mainClass": "StringManip2",

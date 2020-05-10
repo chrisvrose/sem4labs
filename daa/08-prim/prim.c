@@ -45,7 +45,7 @@ void prims(int n, int cost[10][10], int source)
             }
         }
     }
-    printf("Total cost: %d", sum);
+    printf("Total cost: %d\n", sum);
 }
 int main()
 {
@@ -55,7 +55,7 @@ int main()
     int i, j;         //index variables
     printf("Enter n (no. of nodes): ");
     scanf("%d", &n);
-    printf("Enter cost matrix:\n ");
+    printf("Enter cost matrix:\n");
     for (i = 1; i <= n; i++)
         for (j = 1; j <= n; j++)
             scanf("%d", &cost[i][j]);

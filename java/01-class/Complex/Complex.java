@@ -46,8 +46,8 @@ public class Complex{
 
 		System.out.println("Sum:"+c1.Add(c2));
 		System.out.println("Difference:"+c1.Subtract(c2));
-		
-		System.out.println("Equality"+c1.equals(c2));
+
+		System.out.println("c1 and c2 are "+(c1.equals(c2)?"equal":"not equal"));
 
 
 		//Complex c3 = new Complex(7.0f,8.6f);

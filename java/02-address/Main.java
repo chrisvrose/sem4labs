@@ -12,13 +12,38 @@ public class Main{
 		int n3 = in.nextInt();
 		Employee[] n = new Employee[n2];
 
+		System.out.println("Students");
+		for(int i=0;i<n1;i++){
+			s[i] = Student.getInput(in);
+		}
+		System.out.println("College");
+		for(int i=0;i<n2;i++){
+			c[i] = College.getInput(in);
+		}
+		System.out.println("Employees");
+		for(int i=0;i<n3;i++){
+			n[i] = Employee.getInput(in);
+		}
+
+		for(Student student:s){
+			System.out.println(student);
+		}
+		for(College college:c){
+			System.out.println(college);
+		}
+		for(Employee employee:n){
+			System.out.println(employee);
+		}
+
+
+
 		//For colleges
 
 
 
 
 
-
+		in.close();
 		//Student[] s = new Student()[n1];
 		//College[] c = new College()[n2];
 		//Employee[] e = new Employee()[n3];

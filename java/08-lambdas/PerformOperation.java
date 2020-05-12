@@ -16,12 +16,12 @@ public class PerformOperation {
     static boolean checkPrime(int x) {
         return new PerformOperation((n) -> {
             if (n == 1)
-                return true;
+                return false;
             for (int i = 2; i < n / 2 + 1; i++) {
                 if ((n % i) == 0)
-                    return true;
+                    return false;
             }
-            return false;
+            return true;
         }).check(x);
         // return p.check(x);
     }

@@ -16,7 +16,8 @@ public class Account{
 
     ///returns how much could be withdrawn
     int withdraw(int amount){
-        int withdrawable = balance-amount>500?(balance-amount):(amount-500);
+        int withdrawable = (balance - amount)>500?(balance-amount):(balance-500);
+        balance-=withdrawable;
         return withdrawable;
     }
 

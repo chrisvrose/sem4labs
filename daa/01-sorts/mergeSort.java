@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //import java.util.Scanner;
 public class mergeSort{
 	//int arr[];
@@ -55,6 +57,19 @@ public class mergeSort{
 	}
 	
 	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter number of elements");
+		int s = in.nextInt();
+		int[] input = new int[s];
+		System.out.println("Enter the values");
+		for(int i=0;i<s;i++) input[i] = in.nextInt();
+		mergeSort sort = new mergeSort(input);
+		sort.Sort(0, s-1);
+		System.out.println("The list is "+(sort.isSorted()?"sorted":"not sorted"));
+		
+		
+		
+		
 		int[] a,b,c,res = new int[3];
 		System.out.println("Size\tAsc\tDesc\tRand");
 		for(int i=2;i<=512;i*=2){
@@ -74,7 +89,7 @@ public class mergeSort{
 			}
 			System.out.println(i+"\t"+res[0]+"\t"+res[1]+"\t"+res[2]);
 		}
-		//in.close();
+		in.close();
 	
 	}
 }

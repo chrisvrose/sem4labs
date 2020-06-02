@@ -63,8 +63,7 @@ int main()
     scanf("%d", &n);
     //2. Read the elements in the set
     printf("Enter the set in increasing order:\n");
-    for (i = 1; i <= n; i++)
-    {
+    for (i = 1; i <= n; i++){
         scanf("%d", &s[i]);
         sum += s[i];
     }
@@ -72,10 +71,9 @@ int main()
     printf("Enter the maximum subset value of d\n:");
     scanf("%d", &d);
     //4. Call function
-    if (sum < d)
+    if (sum < d){
         printf("Solution NOT possible.\n");
-    else
-    {
+    }else{
         if (count == 0)
             printf("No solutions possible.");
         else

@@ -1,5 +1,6 @@
 import java.util.Scanner;
 //import java.io.PrintWriter;
+@SuppressWarnings("unused")
 public class TopoOrdering{
 	//public int count=0;
 	//private int components=0;

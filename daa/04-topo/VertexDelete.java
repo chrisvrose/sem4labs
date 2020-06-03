@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+@SuppressWarnings("unused")
 public class VertexDelete{
 	public int[] SourceDelete(int a[][],int[] indeg,int n){
 		int i,j;
